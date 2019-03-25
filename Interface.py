@@ -113,16 +113,6 @@ def evaluateExpression(expressionString):
                 postFix[len(postFix)-1] += x
             else:
                 postFix.append(x)
-##        print(postFix)        
-##        print(postFixStack)           
-##        if x not in '^*/-+() ' and isfloat(x) == False and x.isalpha() == False:
-##            outputText.set("Invalid Expression. Please Check Expression")    
-##            return
-##    if len(postFixStack) != 0:
-##        outputText.set("Invalid Expression. Please Check Expression")
-##        return
-##    print(postFixStack)
-##    input('Freeze')
     print(postFix)
     outputText.set(evaluatePostFix(postFix))
 
@@ -183,17 +173,6 @@ def placeHolder():##Function to be used as a placeholder during development.
 
 homeScreen = Tk(className=" Scientific Calculator")
 homeScreen.resizable(0, 0)
-##menuBar = Menu(homeScreen) ##Create a new object of class Menu
-##homeScreen.config(menu=menuBar) ##Config is a function of the window used to add menu bar to it.
-##
-##fileSubMenu = Menu(menuBar)
-##menuBar.add_cascade(label="FILE",menu=fileSubMenu)
-####fileSubMenu.add_command(label = "New File",command = placeHolder)##Adding a command is optional
-####fileSubMenu.add_command(label = "New Project",command = placeHolder)
-####fileSubMenu.add_command(label = "Save",command = placeHolder)
-####fileSubMenu.add_command(label = "Print",command = placeHolder)
-####fileSubMenu.add_separator()
-##fileSubMenu.add_command(label = "Quit",command="")
 
 guiFrame = Frame(homeScreen)
 inputText = StringVar()
