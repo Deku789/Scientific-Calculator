@@ -207,7 +207,6 @@ inputLabel.grid(row=0,column=0,sticky=N+S+E+W,ipady=9) ##TODO Fix the problem of
 outputLabel.grid(row=1,column=0,stick=N+S+E+W,ipady=9)
 minusButton.grid(row=0,column=1,padx=(10,0),pady=5)
 radianButton.grid(row=1,column=1,padx=(10,0),pady=5)
-inputText.set("Sin(2+1)+Sin(3+1)")
 
 keyPadFrame = Frame(homeScreen)
 keyPadButton  = []
